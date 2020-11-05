@@ -1,6 +1,6 @@
 from selenium import webdriver
 driver = webdriver.Chrome()
-driver.get("https://github.com/saucelabs/the-internet")
+driver.get("http://the-internet.herokuapp.com/")
 print(driver.current_url)
 
 link = driver.find_element_by_link_text('A/B Testing')

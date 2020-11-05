@@ -3,7 +3,7 @@ import time
 from selenium.common.exceptions import NoSuchElementException
 
 driver = webdriver.Chrome()
-driver.get("https://github.com/saucelabs/the-internet")
+driver.get("http://the-internet.herokuapp.com/")
 
 link = driver.find_element_by_link_text('Add/Remove Elements')
 link.click()

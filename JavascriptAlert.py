@@ -6,7 +6,7 @@ from selenium.webdriver.support.ui import WebDriverWait as wait
 from selenium.webdriver.support import expected_conditions as EC
 
 driver = webdriver.Chrome()
-driver.get("https://github.com/saucelabs/the-internet")
+driver.get("http://the-internet.herokuapp.com/")
 
 link = driver.find_element_by_link_text('JavaScript Alerts')
 link.click()

@@ -1,7 +1,7 @@
 from selenium import webdriver
 
 driver = webdriver.Chrome()
-driver.get("https://github.com/saucelabs/the-internet")
+driver.get("http://the-internet.herokuapp.com/")
 
 link = driver.find_element_by_link_text('Basic Auth')
 link.click()
