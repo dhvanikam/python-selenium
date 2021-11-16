@@ -1,2 +1,5 @@
 .DS_Store
 log.txt
+.envrc
+.direnv
+venv
