@@ -1,4 +1,8 @@
 from selenium import webdriver
+import warnings
+
+warnings.filterwarnings("ignore", category=DeprecationWarning)
+
 driver = webdriver.Chrome()
 driver.get("http://the-internet.herokuapp.com/")
 print(driver.current_url)
