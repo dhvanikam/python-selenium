@@ -1,6 +1,8 @@
 from selenium import webdriver
 from selenium.common.exceptions import NoSuchElementException
+import warnings
 
+warnings.filterwarnings("ignore", category=DeprecationWarning)
 driver = webdriver.Chrome()
 driver.get("http://the-internet.herokuapp.com/")
 Home_URL = driver.current_url
