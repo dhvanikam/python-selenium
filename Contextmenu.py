@@ -2,7 +2,9 @@ from selenium import webdriver
 from selenium.webdriver import ActionChains
 from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.common.alert import Alert
+import warnings
 
+warnings.filterwarnings("ignore", category=DeprecationWarning)
 driver = webdriver.Chrome()
 driver.get("http://the-internet.herokuapp.com/")
 
