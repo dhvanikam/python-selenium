@@ -4,7 +4,9 @@ from selenium.webdriver.common.alert import Alert
 import time
 from selenium.webdriver.support.ui import WebDriverWait as wait
 from selenium.webdriver.support import expected_conditions as EC
+import warnings
 
+warnings.filterwarnings("ignore", category=DeprecationWarning)
 driver = webdriver.Chrome()
 driver.get("http://the-internet.herokuapp.com/")
 
