@@ -3,3 +3,5 @@ log.txt
 .envrc
 .direnv
 venv
+.vscode/
+__pycache__/
