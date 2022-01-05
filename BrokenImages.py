@@ -1,7 +1,9 @@
 from seleniumwire import webdriver
 from selenium.webdriver.remote.webelement import WebElement
 from selenium.webdriver.common.desired_capabilities import DesiredCapabilities
+import warnings
 
+warnings.filterwarnings("ignore", category=DeprecationWarning)
 
 capabilities = DesiredCapabilities.CHROME
 # capabilities["loggingPrefs"] = {"performance": "ALL"}  # chromedriver < ~75
