@@ -2,7 +2,9 @@ from selenium import webdriver
 import time
 from selenium.common.exceptions import NoSuchElementException
 from selenium.webdriver.remote.webelement import WebElement
+import warnings
 
+warnings.filterwarnings("ignore", category=DeprecationWarning)
 driver = webdriver.Chrome()
 driver.get("http://the-internet.herokuapp.com/")
 
